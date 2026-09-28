@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+  background-color: rgb(156, 205, 165);
+}
+
+.wrapper {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.section {
+  padding: 1rem;
+  flex-grow: grow;
+}
+
+.left {
+  grid-area: left;
+  max-width: 200px;
+}
+
+main {
+  grid-area: main;
+  background-image: url(backgroundjapan.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  grid-area: right;
+  max-width: 200px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkgoldenrod;
+}
+
+nav {
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: white;
+  margin: 0rem;
+}
+
+nav ul {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: rgb(217, 217, 217);
+}
+
+.image {
+  max-width: 70%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  padding-left: 1rem;
+  max-width: 100%;
+}
+
+p {
+  font-size: 1rem;
+  padding-left: 1rem;
+  max-width: 90%;
+}
+
+img {
+  max-width: 45%;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.introtext {
+  max-width: 30%;
+
+  text-align: left;
+  margin: 3rem;
+  margin-top: 5rem;
+  background-color: white;
+
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.introtext a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(179, 151, 70);
+  padding: 0.67rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
+.introtext ul {
+  padding: 0.67rem;
+  margin: 0rem;
+  list-style: none;
+}
