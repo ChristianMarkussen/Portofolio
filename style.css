@@ -133,14 +133,23 @@ main p {
 footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 0.5rem;
   padding: 1rem;
   background-color: var(--background-color);
 }
 
-.footer-section {
+.footer-section:not(:last-child) {
   border-right: 1px solid var(--border-color);
+}
+
+.logo-section {
+  text-align: left;
+  padding-left: 0.67rem;
+}
+
+.logo-section > img {
+  width: 2.367rem;
 }
 
 footer h1 {
@@ -185,8 +194,43 @@ footer ul {
 }
 
 footer li {
+  display: grid;
   font-size: 1rem;
-  padding-bottom: 8px;
+  margin-bottom: 0.6767rem;
+}
+
+.logo {
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#email {
+  background-image: url(Pictures/email2.png);
+}
+
+#location {
+  background-image: url(Pictures/location2.png);
+}
+
+#phone {
+  background-image: url(Pictures/phone2.png);
+}
+
+#youtube {
+  background-image: url(Pictures/youtube2.png);
+}
+
+#facebook {
+  background-image: url(Pictures/facebook2.png);
+}
+
+#github {
+  background-image: url(Pictures/github2.png);
+}
+
+#spotify {
+  background-image: url(Pictures/spotify2.png);
 }
 
 footer a {
