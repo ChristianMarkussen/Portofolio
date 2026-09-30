@@ -31,8 +31,9 @@ header {
 
 main {
   grid-area: main;
-  background-image: url(backgroundjapan.jpeg);
+  background-image: url(Pictures/backgroundjapan.jpeg);
   background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -41,14 +42,9 @@ main {
   max-width: 200px;
 }
 
-footer {
-  grid-area: footer;
-  background-color: darkgoldenrod;
-}
-
 nav {
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
   background-color: white;
   margin: 0rem;
 }
@@ -78,7 +74,7 @@ nav a:hover {
   max-width: 70%;
 }
 
-h1 {
+main h1 {
   font-size: 3rem;
 
   text-align: left;
@@ -87,9 +83,9 @@ h1 {
   overflow-wrap: break-word;
 }
 
-p {
+main p {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding-left: 1rem;
   max-width: 90%;
 }
@@ -131,4 +127,63 @@ img {
   padding: 0.67rem;
   margin: 0rem;
   list-style: none;
+}
+
+/* -- FOOTER FOOTER FOOTER FOOTER -- ik ai btw*/
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.footer-section {
+  background-color: red;
+}
+
+footer h1 {
+  font-size: 2rem;
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 0.67rem;
+  background-color: palevioletred;
+  margin: 0;
+}
+
+footer h2 {
+  font-size: 2rem;
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 0.67rem;
+  margin: 0;
+}
+
+footer p {
+  font-size: 1rem;
+  text-align: left;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 0.67rem;
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  background-color: rgba(74, 74, 209, 0.218);
+  padding: 0.67rem;
+  margin: 0;
+}
+
+footer li {
+  font-size: 1rem;
+  padding: 4px;
+}
+
+footer a {
+  text-decoration: none;
 }
