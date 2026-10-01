@@ -32,15 +32,6 @@ header {
   grid-area: header;
 }
 
-.section {
-  padding: 1rem;
-  flex-grow: grow;
-  background-image: url(Pictures/backgroundjapan.jpeg);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
 /*NAVIGATION - NAVIGATION - NAVIGATION - NAVIGATION*/
 nav {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -73,6 +64,15 @@ nav a:hover {
 /*MAIN - MAIN - MAIN - MAIN - MAIN - MAIN - MAIN*/
 main {
   grid-area: main;
+}
+
+.section {
+  padding: 1rem;
+  flex-grow: grow;
+  background-image: url(Pictures/backgroundjapan.jpeg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .section h1 {
@@ -268,8 +268,97 @@ footer a {
   font-weight: 500;
 }
 
+/*Portofolio - Portofolio - Portofolio - Portofolio*/
+.grow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: grow;
+}
+
+main h1 {
+  font-size: 3.67rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+main h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--subtext-color);
+}
+
+.project-text h3 {
+  font-size: 0.67rem;
+  font-weight: normal;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b59b5a;
+}
+
+.project-text h2 {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.project-text p {
+  font-size: 1rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.4rem;
+  margin: 4rem;
+  overflow: auto;
+  padding: 3rem;
+}
+
+.project img {
+  width: 90%;
+  height: 380px;
+  display: block;
+  object-fit: cover;
+}
+
+#desktop {
+  object-position: center;
+}
+
+#smol-line {
+  width: 64px;
+  height: 2px;
+  background: var(--ancher-color);
+  margin: 0.867rem;
+  padding: 0;
+}
+
+.project-text {
+  position: relative;
+  background: white;
+  margin: -6rem 0 0 1.67rem;
+  padding: 24px;
+  text-align: left;
+  border-top: 2px solid var(--ancher-color);
+  /*Box shadow fundet online*/
+  /*box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
+
+  box-shadow:
+    rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/*Media Queries - Media Queries - Media Queries*/
+
 @media (width>1400px) {
-  main {
+  .section {
     height: 92vh;
   }
   .introtext img {
