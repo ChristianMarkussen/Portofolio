@@ -15,8 +15,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template: 1fr;
   min-height: 100vh;
   grid-template-areas:
     "header"
@@ -365,7 +364,7 @@ footer a {
   grid-template-columns: 3fr 2fr;
   column-gap: 5rem;
   align-items: center;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   height: 95vh;
 }
 
