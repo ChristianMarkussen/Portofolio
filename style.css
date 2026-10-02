@@ -8,16 +8,16 @@
 
 body {
   margin: 0;
-  font-size: 4rem;
+  font-size: 1rem;
   text-align: center;
   background-color: white;
 }
 
 .wrapper {
   display: grid;
-  grid-template: 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: minmax(0, 1fr);
-  min-height: 100vh;
+  height: 100vh;
   grid-template-areas:
     "header"
     "main"
@@ -139,7 +139,7 @@ main {
 
 .introtext ul {
   padding: 0.67rem;
-  margin: 0rem;
+  margin: 0.67rem 0.67rem 0.67rem 0;
   list-style: none;
 }
 
@@ -275,7 +275,7 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: grow;
+  flex-grow: 1;
 }
 
 #projekt-title {
@@ -312,9 +312,10 @@ footer a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.4rem;
-  margin: 4rem;
+  margin: 6.7rem;
   overflow: auto;
-  padding: 3rem;
+  padding-bottom: 3rem;
+  padding: 0.5rem;
 }
 
 .project img {
@@ -366,7 +367,7 @@ footer a {
   column-gap: 5rem;
   align-items: center;
   border-bottom: 1px solid var(--border-color);
-  height: 95vh;
+  height: auto;
 }
 
 section {
@@ -415,6 +416,7 @@ section p {
   margin-top: 40px;
   border-top: 1px solid var(--border-color);
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .oplysninger {
@@ -474,9 +476,38 @@ section p {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #about-intro {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #portræt {
+    margin: 2rem auto 2rem auto;
+  }
+
+  section h1 {
+    font-size: 2.67rem;
+  }
+
+  section p {
+    font-size: 1.2rem;
+  }
+
+  #oplysning-container {
+    justify-content: center;
+  }
+
+  .oplysninger h2 {
+    font-size: 2rem;
+  }
+
+  .oplysninger p {
+    font-size: 0.9rem;
+  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 850px) {
   .foot-container {
     grid-template-columns: 2fr 1fr;
     gap: 0rem;
@@ -501,7 +532,7 @@ section p {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   nav ul {
     font-size: 1.5rem;
   }
@@ -522,13 +553,6 @@ section p {
   #projekt-rubrik {
     max-width: 75%;
   }
-}
-
-@media (max-width: 400px) {
-  .introtext {
-    width: auto;
-    max-width: 85%;
-  }
 
   .foot-container {
     grid-template-columns: 1fr;
@@ -541,5 +565,28 @@ section p {
 
   .footer-section:not(:last-child) {
     border-bottom: 1px solid var(--border-color);
+  }
+
+  #about-intro {
+    padding: 20px 40px 80px;
+  }
+
+  .oplysninger {
+    text-align: center;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  #smol-line {
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .introtext {
+    width: auto;
+    max-width: 85%;
   }
 }
