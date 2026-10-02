@@ -38,6 +38,7 @@ nav {
   font-weight: normal;
   background-color: white;
   margin: 0rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav ul {
@@ -276,13 +277,13 @@ footer a {
   flex-grow: grow;
 }
 
-main h1 {
+.grow h1 {
   font-size: 3.67rem;
   margin: 0;
   margin-top: 2rem;
 }
 
-main h4 {
+.grow h4 {
   font-size: 1rem;
   font-weight: normal;
   font-style: italic;
@@ -397,58 +398,75 @@ main h4 {
     justify-content: center;
   }
 
-  @media (max-width: 760px) {
-    .foot-container {
-      grid-template-columns: 2fr 1fr;
-      gap: 0rem;
-    }
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    /* removes my earlier border-right on each foot-section except last */
-    .footer-section:not(:last-child) {
-      border-right: none;
-    }
-
-    .footer-section:nth-child(odd) {
-      border-right: 1px solid var(--border-color);
-    }
-
-    .footer-section:nth-child(1),
-    .footer-section:nth-child(2) {
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .introtext {
-      max-width: 67.67%;
-    }
+@media (max-width: 760px) {
+  .foot-container {
+    grid-template-columns: 2fr 1fr;
+    gap: 0rem;
   }
 
-  @media (max-width: 520px) {
-    nav ul {
-      font-size: 1.5rem;
-    }
-
-    .introtext h1 {
-      font-size: 1.67rem;
-    }
+  /* removes my earlier border-right on each foot-section except last */
+  .footer-section:not(:last-child) {
+    border-right: none;
   }
 
-  @media (max-width: 400px) {
-    .introtext {
-      width: auto;
-      max-width: 85%;
-    }
+  .footer-section:nth-child(odd) {
+    border-right: 1px solid var(--border-color);
+  }
 
-    .foot-container {
-      grid-template-columns: 1fr;
-      gap: 0rem;
-    }
+  .footer-section:nth-child(1),
+  .footer-section:nth-child(2) {
+    border-bottom: 1px solid var(--border-color);
+  }
 
-    .footer-section:nth-child(odd) {
-      border-right: none;
-    }
+  .introtext {
+    max-width: 67.67%;
+  }
+}
 
-    .footer-section:not(:last-child) {
-      border-bottom: 1px solid var(--border-color);
-    }
+@media (max-width: 520px) {
+  nav ul {
+    font-size: 1.5rem;
+  }
+
+  .introtext h1 {
+    font-size: 1.67rem;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  .grow h1 {
+    font-size: 2.3rem;
+  }
+
+  .grow h4 {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .introtext {
+    width: auto;
+    max-width: 85%;
+  }
+
+  .foot-container {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+  .footer-section:nth-child(odd) {
+    border-right: none;
+  }
+
+  .footer-section:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
   }
 }
