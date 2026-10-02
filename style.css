@@ -6,6 +6,14 @@
   --subtext-color: #6b6b6b;
 }
 
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+}
+
 body {
   margin: 0;
   font-size: 4rem;
@@ -16,7 +24,6 @@ body {
 .wrapper {
   display: grid;
   grid-template: auto 1fr auto / auto 1fr auto;
-  width: 100vw;
   height: 100vh;
   grid-template-areas:
     "header"
