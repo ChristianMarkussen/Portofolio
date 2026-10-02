@@ -332,7 +332,8 @@ footer a {
   width: 64px;
   height: 2px;
   background: var(--ancher-color);
-  margin: 0.867rem;
+  margin-top: 0.867rem;
+  margin-bottom: 0.867rem;
   padding: 0;
 }
 
@@ -359,8 +360,10 @@ footer a {
 
 /*About - About - About - About - About - About*/
 #about-intro {
+  padding: 20px 120px 80px;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  column-gap: 5rem;
   align-items: center;
   border: 1px solid var(--border-color);
   height: 95vh;
@@ -369,7 +372,6 @@ footer a {
 section {
   display: flex;
   flex-direction: column;
-  margin: 6.7rem;
   text-align: left;
   color: var(--headline-color);
 }
@@ -390,6 +392,7 @@ section h3 {
 section p {
   font-size: 1.5rem;
   margin: 0.8rem;
+  margin-left: 0;
 }
 
 .oplysninger h2 {
@@ -421,7 +424,7 @@ section p {
 
 #portræt {
   display: flex;
-  max-width: 80%;
+  max-width: 90%;
   align-items: center;
   justify-content: center;
 }
