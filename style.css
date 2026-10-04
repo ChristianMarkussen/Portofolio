@@ -544,6 +544,17 @@ section h2 {
   margin: auto;
 }
 
+.places-ancher {
+  padding: 1rem 1.5rem 0.4rem 1.5rem;
+  max-width: 90%;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b59b5a;
+}
+
 .mine-mål ul {
   margin: auto;
   margin-bottom: 1rem;
@@ -621,6 +632,10 @@ section h2 {
 }
 
 #rejser h3 {
+  border-top: 3px solid var(--ancher-color);
+}
+
+#rejser h2 {
   border-top: 3px solid var(--ancher-color);
 }
 
