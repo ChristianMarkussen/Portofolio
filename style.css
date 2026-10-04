@@ -718,6 +718,7 @@ section h2 {
 
 .cv h1 {
   font-size: 2rem;
+  word-break: break-word;
 }
 
 #cv-title {
@@ -758,6 +759,7 @@ section h2 {
   margin-bottom: 0;
   margin-left: 0;
   padding-bottom: 1rem;
+  gap: 10px;
 }
 
 .cv-container > * {
@@ -787,6 +789,11 @@ section h2 {
 @media (max-width: 1400px) {
   .cv {
     grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  #cv {
+    padding: 0;
   }
 }
 
@@ -946,6 +953,23 @@ section h2 {
 
   .smol-line {
     margin: auto;
+  }
+
+  .cv-erfaringer {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-erfaringer li {
+    list-style: none;
+  }
+
+  .skub {
+    display: grid;
+    grid-template-areas:
+      "p1"
+      "p2"
+      "p3"
+      "p4";
   }
 }
 
