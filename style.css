@@ -70,7 +70,7 @@ main {
 
 .section {
   padding: 1rem;
-  flex-grow: grow;
+  flex-grow: 1;
   background-image: url(Pictures/backgroundjapan.jpeg);
   background-size: cover;
   background-position: right;
@@ -329,7 +329,7 @@ footer a {
   object-position: center;
 }
 
-#smol-line {
+.smol-line {
   width: 64px;
   height: 3px;
   background: var(--ancher-color);
@@ -564,8 +564,8 @@ section h2 {
   border-bottom: 1px solid var(--border-color);
 }
 
-#text-right {
-  grid-template-columns: 2fr 3fr;
+.text-right {
+  grid-template-columns: 2fr 3fr !important;
 }
 
 #vægt {
@@ -679,6 +679,7 @@ section h2 {
   padding: 1rem;
   border-radius: 2rem;
   border: 1px solid var(--ancher-color);
+  font-style: italic;
 }
 
 #portfolio-knap a:hover {
@@ -737,7 +738,7 @@ section h2 {
     height: auto;
   }
 
-  #text-right {
+  .text-right {
     grid-template-columns: 1fr;
     height: auto;
   }
@@ -851,7 +852,7 @@ section h2 {
     text-align: center;
   }
 
-  #smol-line {
+  .smol-line {
     margin: auto;
   }
 }
