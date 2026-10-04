@@ -979,6 +979,10 @@ section h2 {
     list-style: none;
   }
 
+  .mine-mål li {
+    list-style: none;
+  }
+
   .skub {
     display: grid;
     grid-template-areas:
@@ -986,6 +990,10 @@ section h2 {
       "p2"
       "p3"
       "p4";
+  }
+
+  .places {
+    justify-content: center;
   }
 }
 
